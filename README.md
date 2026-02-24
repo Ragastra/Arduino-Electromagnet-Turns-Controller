@@ -1,4 +1,4 @@
-# Arduino Electromagnet Turns Controller
+# Arduino Electromagnet Turns Controller (By Shantanu)
 
 This repository contains the Arduino firmware for controlling stepper motors to wind turns onto an electromagnetic mild steel core. It is designed to work with an **Arduino UNO** and a **CNC Shield V3**.
 
