@@ -1,9 +1,9 @@
 # Arduino Electromagnet Turns Controller (By Shantanu)
 
-This repository contains the Arduino firmware for controlling stepper motors to wind turns onto an electromagnetic mild steel core. It is designed to work with an **Arduino UNO** and a **CNC Shield V3**.
+Arduino firmware for controlling stepper motors to wind turns onto an electromagnetic mild steel core. Works with Arduino UNO and CNC Shield V3.
 
 ## Overview
-The system synchronously drives two stepper motors (connected to X-axis and Y-axis headers) to rotate the winding mechanism. This ensures even and consistent winding of the coil.
+The system drives two stepper motors (connected to X-axis and Y-axis headers) synchronously to rotate the winding mechanism. This ensures even and consistent winding of the coil.
 
 ## Hardware Requirements
 - Arduino UNO
@@ -29,8 +29,8 @@ The code utilizes the standard pin mapping for limits and steppers on the CNC Sh
 2. **Loop**: The `loop()` function generates simultaneous step pulses for both X and Y motors.
    - **Pulse High Time**: 2000 microseconds
    - **Pulse Low Time**: 2000 microseconds
-   - **Step Rate**: Approximately 250 steps per second.
+   - **Step Rate**: Approximately 250 steps per second
 
 ## Adjustments
-- **Speed**: To change the winding speed, adjust the `delayMicroseconds()` value in the `loop`. Lower values increase speed, while higher values decrease it.
+- **Speed**: To change the winding speed, adjust the `delayMicroseconds()` value in the loop. Lower values increase speed, higher values decrease it.
 - **Direction**: Toggle `HIGH`/`LOW` on `X_DIR` or `Y_DIR` in `setup()` to change rotation direction.
